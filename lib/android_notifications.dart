@@ -1,13 +1,14 @@
-import 'dart:async';
+import 'package:meta/meta.dart';
 
-import 'package:flutter/services.dart';
+class AndroidNotification {
+  /// Create an basic Android Notification with the following parameters
+  ///
+  /// [contentTitle] Set the title (first row) of the notification, in a standard notification.
+  /// [contentText] Set the text (second row) of the notification, in a standard notification.
+  const AndroidNotification({@required this.contentTitle, @required this.contentText})
+      : assert(contentTitle != null),
+        assert(contentText != null);
 
-class AndroidNotifications {
-  static const MethodChannel _channel =
-      const MethodChannel('android_notifications');
-
-  static Future<String> get platformVersion async {
-    final String version = await _channel.invokeMethod('getPlatformVersion');
-    return version;
-  }
+  final String contentTitle;
+  final String contentText;
 }
