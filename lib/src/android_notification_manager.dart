@@ -1,7 +1,7 @@
-import 'package:android_notifications/android_notifications.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
 import 'package:platform/platform.dart';
+import 'android_notification.dart';
 
 const String kChannelName =
     'plugins.flutter.nikeorever.com/android_notifications';

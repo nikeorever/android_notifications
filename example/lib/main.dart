@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:android_notifications/android_notifications.dart';
-import 'package:android_notifications/android_notification_manager.dart';
-import 'package:flutter/services.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,11 +10,6 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   AndroidNotificationManager _manager = const AndroidNotificationManager();
-
-  @override
-  void initState() {
-    super.initState();
-  }
 
   @override
   Widget build(BuildContext context) {

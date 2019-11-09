@@ -1,10 +1,8 @@
-import 'package:android_notifications/android_notification_manager.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:android_notifications/android_notifications.dart';
-import 'package:meta/meta.dart';
 import 'package:mockito/mockito.dart';
 import 'package:platform/platform.dart';
+import 'package:android_notifications/android_notifications.dart';
 
 void main() {
   AndroidNotification notification;
