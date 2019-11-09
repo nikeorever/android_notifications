@@ -1,6 +1,6 @@
 name: android_notifications
 description: Flutter plugin for display notifications, Not supported on iOS
-version: 0.0.1
+version: 0.0.2
 author: Nikeo <nikeorever@gmail.com>
 homepage: https://github.com/nikeorever/android_notifications
 
