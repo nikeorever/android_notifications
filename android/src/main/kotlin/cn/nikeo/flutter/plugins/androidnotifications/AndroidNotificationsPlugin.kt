@@ -11,7 +11,7 @@ import io.flutter.embedding.engine.plugins.FlutterPlugin
  */
 class AndroidNotificationsPlugin(val smallIcon: Int) : FlutterPlugin {
 
-    constructor() : this(-1)
+    constructor() : this(ID_NULL)
 
     private lateinit var impl: MethodCallHandlerImpl
 

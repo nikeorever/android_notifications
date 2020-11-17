@@ -57,7 +57,7 @@ internal class MethodCallHandlerImpl(
                                 context = context,
                                 contentTitle = contentTitle,
                                 contentText = contentText,
-                                smallIcon = if (plugin.smallIcon == -1) {
+                                smallIcon = if (plugin.smallIcon == ID_NULL) {
                                     helper.defaultSmallIcon()
                                 } else {
                                     plugin.smallIcon
