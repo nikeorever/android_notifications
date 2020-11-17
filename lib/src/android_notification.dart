@@ -1,5 +1,8 @@
+import 'package:android_notifications/android_notifications.dart';
 import 'package:meta/meta.dart';
 
+/// A class that represents how a persistent notification is to be presented
+/// to the user using the [AndroidNotificationManager].
 class AndroidNotification {
   /// Create an basic Android Notification with the following parameters
   ///

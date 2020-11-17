@@ -1,17 +1,21 @@
 name: android_notifications
-description: Flutter plugin for display notifications, Not supported on iOS
-version: 0.0.2
-author: Nikeo <nikeorever@gmail.com>
+description: A Flutter plugin for managing notification on Android Platform.
+version: 0.0.3
+author: Lenox <nikeorever@gmail.com>
 homepage: https://github.com/nikeorever/android_notifications
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
+  # Flutter versions prior to 1.12 did not support the
+  # flutter.plugin.platforms map.
+  flutter: ">=1.12.0 <2.0.0"
+
 
 dependencies:
   flutter:
     sdk: flutter
   platform: ^2.2.1
-  meta: ^1.0.5
+  meta: ^1.2.3
 
 dev_dependencies:
   test: ^1.3.0
@@ -21,5 +25,7 @@ dev_dependencies:
 
 flutter:
   plugin:
-    androidPackage: com.nikeorever.flutter.plugins.androidnotifications
-    pluginClass: AndroidNotificationsPlugin
+    platforms:
+      android:
+        package: cn.nikeo.flutter.plugins.androidnotifications
+        pluginClass: AndroidNotificationsPlugin

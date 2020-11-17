@@ -12,11 +12,11 @@ void main() {
     mockChannel = MockMethodChannel();
   });
 
-  group('AndroidNotifications', () {
-    test('pass right params', () async {
+  group('AndroidNotifications Test', () {
+    test('Test on Android platform', () async {
       notification = AndroidNotification(
-        contentTitle: "from fluter",
-        contentText: 'hello, android',
+        contentTitle: "From Flutter",
+        contentText: 'Hello, Android, I am Flutter.',
       );
 
       var manager = AndroidNotificationManager.private(
@@ -26,20 +26,15 @@ void main() {
       verify(mockChannel.invokeMethod<void>('notify', <String, Object>{
         'tag': null,
         'id': 1,
-        'contentTitle': "from fluter",
-        'contentText': 'hello, android'
+        'contentTitle': "From Flutter",
+        'contentText': 'Hello, Android, I am Flutter.'
       }));
     });
-    test('pass null value to title', () {
-      expect(() {
-        AndroidNotification(contentTitle: null, contentText: 'hello, android');
-      }, throwsAssertionError);
-    });
 
-    test('call in ios platform', () async {
+    test('Test on iOS platform', () async {
       notification = AndroidNotification(
-        contentTitle: "from fluter",
-        contentText: 'hello, ios',
+        contentTitle: "From Flutter",
+        contentText: 'Hello, iOS, I am Flutter.',
       );
 
       var manager = AndroidNotificationManager.private(

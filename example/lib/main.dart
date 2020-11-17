@@ -10,13 +10,14 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   AndroidNotificationManager _manager = const AndroidNotificationManager();
+  static const int _notificationId = 1;
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Plugin example app'),
+          title: const Text('AndroidNotificationsPlugin example app'),
         ),
         body: Center(
           child: Column(
@@ -27,9 +28,9 @@ class _MyAppState extends State<MyApp> {
                   onPressed: () async {
                     AndroidNotification notification =
                         const AndroidNotification(
-                            contentTitle: 'from flutter',
-                            contentText: 'hello, android');
-                    await _manager.notify(1, notification);
+                            contentTitle: 'From Flutter',
+                            contentText: 'Hello, Android, I am Flutter.');
+                    await _manager.notify(_notificationId, notification);
                   },
                   child: Text('show android notification',
                       style: TextStyle(color: const Color(0xFFFFFFFF)))),
@@ -38,7 +39,7 @@ class _MyAppState extends State<MyApp> {
                   color: const Color(0xFF6483E9),
                   elevation: 10,
                   onPressed: () async {
-                    await _manager.cancel(1);
+                    await _manager.cancel(_notificationId);
                   },
                   child: Text('cancel android notification',
                       style: TextStyle(color: const Color(0xFFFFFFFF)))),

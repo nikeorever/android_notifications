@@ -1,14 +1,14 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
+import 'package:meta/meta.dart';
 import 'package:platform/platform.dart';
 import 'android_notification.dart';
 
-const String kChannelName =
-    'plugins.flutter.nikeorever.com/android_notifications';
+const String _kChannelName = 'plugins.flutter.nikeo.cn/android_notifications';
 
+/// A class for managing [AndroidNotification].
 class AndroidNotificationManager {
   const AndroidNotificationManager({Platform platform})
-      : _channel = const MethodChannel(kChannelName),
+      : _channel = const MethodChannel(_kChannelName),
         _platform = platform ?? const LocalPlatform();
 
   @visibleForTesting
