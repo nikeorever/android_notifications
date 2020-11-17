@@ -1,5 +1,7 @@
 # android_notifications
-  
+
+[![pub package](https://img.shields.io/badge/pub-0.0.3-blueviolet.svg)](https://pub.dev/packages/android_notifications)
+
 A Flutter plugin for managing notification on Android Platform. 
 
 ### Usage:
@@ -30,7 +32,7 @@ void cancel() async {
 ```
 
 ### About small icon
-To create Notification in Android, you must set the small icon by `setSmallIcon()`, The small icon resource used by this plugin by default is *{your_package_name}.R.mipmap.ic_launcher*, if you don`t plan to use it as a notification icon, please register the plugin manually and set the small icon in the following way.
+To create Notification in Android, you must set the small icon by `setSmallIcon()`, Otherwise it will throw an exception(**error, Invalid notification (no valid small icon)**), The small icon resource used by this plugin by default is *{your_package_name}.R.mipmap.ic_launcher*, if you do not want to use it as a notification icon, please register the plugin manually and set the small icon in the following way.
 ```kotlin
 class MainActivity : FlutterActivity() {
     override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
@@ -39,3 +41,6 @@ class MainActivity : FlutterActivity() {
     }
 }
 ```
+
+### Links
+[Build Android Notification](https://developer.android.com/training/notify-user/build-notification)
