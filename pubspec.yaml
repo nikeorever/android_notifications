@@ -1,7 +1,6 @@
 name: android_notifications
 description: A Flutter plugin for managing notification on Android Platform.
 version: 1.0.0
-author: Lenox <nikeorever@gmail.com>
 homepage: https://github.com/nikeorever/android_notifications
 
 environment:
