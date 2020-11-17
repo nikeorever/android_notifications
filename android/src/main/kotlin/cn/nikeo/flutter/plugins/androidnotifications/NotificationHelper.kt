@@ -11,13 +11,13 @@ import androidx.annotation.RestrictTo
 import androidx.core.app.NotificationCompat
 import androidx.core.content.getSystemService
 
-const val PRIMARY_CHANNEL_ID = "default"
+internal const val PRIMARY_CHANNEL_ID = "default"
 private const val PRIMARY_CHANNEL_NAME = "Primary Channel"
 
 /**
  * Same as [android.content.res.Resources.ID_NULL].
  */
-const val ID_NULL = 0
+internal const val ID_NULL = 0
 
 @RestrictTo(value = [RestrictTo.Scope.LIBRARY])
 internal class NotificationManagerHelper(private val applicationContext: Context) {
