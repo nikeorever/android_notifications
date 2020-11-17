@@ -1,6 +1,6 @@
 # android_notifications
 
-[![pub package](https://img.shields.io/badge/pub-0.0.3-blueviolet.svg)](https://pub.dev/packages/android_notifications)
+[![pub package](https://img.shields.io/badge/pub-1.0.0-blueviolet.svg)](https://pub.dev/packages/android_notifications)
 
 A Flutter plugin for managing notification on Android Platform. 
 

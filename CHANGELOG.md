@@ -1,6 +1,6 @@
-## 0.0.1
+# Changelog
 
-* init
-## 0.0.2
+All notable changes to this project will be documented in this file.
 
-* format some file
+## [1.0.0] - 2020-11-17
+This is an official release.

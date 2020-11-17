@@ -1,5 +1,5 @@
 group 'cn.nikeo.flutter.plugins.androidnotifications'
-version '0.0.3'
+version '1.0.0'
 
 buildscript {
     ext.kotlin_version = '1.4.10'
